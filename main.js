@@ -8,7 +8,7 @@ const api = '2904de71'
 form.addEventListener('submit', e =>{
     e.preventDefault()
     query = search.value
-    searchMovie()
+    searchMovie(query)
 })
 
 
@@ -20,4 +20,5 @@ function searchMovie(query){
       console.log(data)
     });
 }
+
 

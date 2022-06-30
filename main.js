@@ -1,9 +1,8 @@
 const form = document.getElementById("form")
 const searchInput = document.getElementById("search")
-const results = document.getElementById("results")
 const api = '2904de71'
-
-
+let movieList = document.getElementById("movie-list")
+let movieTitle = document.getElementById("movie-title")
 
 form.addEventListener('submit', e =>{
     e.preventDefault()
@@ -12,14 +11,22 @@ form.addEventListener('submit', e =>{
 })
 
 
-
 function searchMovie(query){
     fetch(`https://www.omdbapi.com/?s=${query}&apikey=${api}`)
     .then(response => response.json())
     .then(data => {
+        movieList = ""
+
         for (let i = 0; i < query.length; i++) {
-            console.log(data.Search[i])
+            let movieItems = data.Search[i]
+            movieTitle.innerHTML += `
+            <h2 class="title">${movieItems.Title}</h2>
+            <img src="${movieItems.Poster}" class="poster">
+            <p class="year">${movieItems.Year}</p>
+            `
+            console.log(movieItems)
           }
+          
     });
 }
 

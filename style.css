@@ -1,9 +1,18 @@
 .container{
     background-color: black;
-    width: 30%;
-    height: 40em;
-    margin: 9em auto;
+    max-width: 50%;
+    max-height: 100%;
+    min-height: 60em;
+    margin: auto;
 }
+
+@media(max-width: 800px){
+    .container{
+        width: 90%;
+        min-width: 350px;
+    }
+}
+
 
 header{
     background-color: grey;
@@ -20,3 +29,16 @@ input{
     padding: 1em;
     max-width: 35%;
 }
+
+.movie-list{
+    color: white;
+}
+
+h2{
+    color: white;
+}
+
+.poster{
+    width: 150px;
+}
+

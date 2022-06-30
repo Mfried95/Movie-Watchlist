@@ -1,6 +1,6 @@
 .container{
-    background-color: black;
-    max-width: 50%;
+    background-color: rgba(0, 0, 0, 0.486);
+    max-width: 800px;
     max-height: 100%;
     min-height: 60em;
     margin: auto;
@@ -9,7 +9,8 @@
 
 
 header{
-    background-color: grey;
+    background-color: black;
+    opacity: 75%;
     height: 10em;
 }
 
@@ -33,17 +34,44 @@ h2{
     font-size: 1.5rem;
 }
 
-.poster{
-    width: 150px;
-    padding: 1em 2em;
-}
 
 .movie-container{
     display: flex;
+    padding: 1em 2em;
+}
+
+img{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 1em 2em;
+}
+
+.movie-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    display: flex;
     flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    margin: 0;
+}
+
+.plot{
+    font-size: 1rem;
 }
 
 
+hr{
+    width: 90%;
+}
+
+
+
+/* Desktop */
 
 @media(max-width: 800px){
     .container{
@@ -54,5 +82,11 @@ h2{
     .movie-container{
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
+
+    p{
+        text-align: center;
+    }
+
 }

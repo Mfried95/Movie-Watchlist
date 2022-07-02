@@ -47,8 +47,18 @@ function searchMovie(query){
     <div class="movie-container">
             <img src="${movie.Poster}" class="poster">
         <div class="movie-info">
-            <h2 class="title">${movie.Title}<p>${movie.imdbRating}</p></h2>
+            <h2 class="title">${movie.Title}<p class="rating"><i class="fa-solid fa-star fa-sm"></i>${movie.imdbRating}</p></h2>
+        <div class="watchlist">
+            <i class="fa-solid fa-plus"></i>
+            <span class="watch-text">Watchlist</span>
+            </div>
+    
+        <div class="info-items">
+            <p class="runtime">${movie.Runtime}</p>
             <p class="year">${movie.Year}</p>
+            <p class= "genre">${movie.Genre}</p>
+            </div>
+            
             <p class="plot">${movie.Plot}</p>
             </div>
             

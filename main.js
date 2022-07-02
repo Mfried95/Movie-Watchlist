@@ -36,13 +36,11 @@ function searchMovie(query){
         movieList = ""
         for (let i = 0; i < query.length; i++) {
             let movieItems = data.Search[i]
-            console.log(movieItems)
             let movieId = movieItems.imdbID
 
             fetch(`https://www.omdbapi.com/?i=${movieId}&apikey=${api}`)
             .then(response => response.json())
             .then(movie => {
-                console.log(movie)
                 movieTitle.innerHTML += `
     <div class="movie-container">
             <img src="${movie.Poster}" class="poster">

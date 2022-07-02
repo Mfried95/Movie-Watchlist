@@ -16,16 +16,12 @@ form.addEventListener('submit', e =>{
     searchMovie(query)
 })
 
-function Refresh() {
-    window.parent.location = window.parent.location.href;
-}
-
-
 
 searchButton.addEventListener("click", function(){
     movieTitle.innerHTML = ""
     query = ""
 })
+
 
 
 
@@ -46,10 +42,6 @@ function searchMovie(query){
             <img src="${movie.Poster}" class="poster">
         <div class="movie-info">
             <h2 class="title">${movie.Title}<p class="rating"><i class="fa-solid fa-star fa-sm"></i>${movie.imdbRating}</p></h2>
-        <div class="watchlist">
-            <i class="fa-solid fa-plus"></i>
-            <span class="watch-text">Watchlist</span>
-            </div>
     
         <div class="info-items">
             <p class="runtime">${movie.Runtime}</p>
@@ -64,6 +56,12 @@ function searchMovie(query){
             </div>
             
             `
+                function watchButton(){
+                    console.log("hello")
+                    watchButton()
+                }
+                
+
             })
           }
         })

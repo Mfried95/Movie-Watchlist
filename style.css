@@ -27,7 +27,7 @@ body{
 
 
 header{
-    background-image: url(/images/movie-banner.jpg);
+    background-image: url(images/movie-banner.jpg);
     background-position: center;
     background-size: cover;
     height: 8em;

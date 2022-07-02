@@ -165,7 +165,10 @@ h1{
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-size: .8em;
+    }
+
+    .info-items{
+        font-size: .5em;
     }
 
   

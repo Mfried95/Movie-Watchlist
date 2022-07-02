@@ -1,55 +1,80 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    background-color: #1C1C1C;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+
+
+/* Layout */
+
 .container{
-    background-color: rgba(0, 0, 0, 0.486);
+    background-color: #121212;
     max-width: 800px;
     max-height: 100%;
     min-height: 60em;
     margin: auto;
+    color: black;
 }
 
 
 
 header{
-    background-color: black;
-    opacity: 75%;
-    height: 10em;
+    background-image: url(/images/movie-banner.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 8em;
 }
+
+
 
 form{
     display: flex;
     justify-content: center;
-    padding-top: 3.5em;
+    padding-top: 3em;
 }
 
 input{
-    padding: 1em;
+    padding: 1em 3em;
+    border-radius: 1rem;
+    outline: none;
+    text-align: left;
     max-width: 35%;
 }
 
-.movie-list{
-    color: white;
+button{
+    padding: 1em;
+    margin-left: .5em;
+    border-radius: 1em;
+    width: 6em;
 }
 
-h2{
-    color: white;
-    font-size: 1.5rem;
+button:hover{
+    background-color: rgba(209, 203, 203, 0.589);
 }
+
 
 
 .movie-container{
     display: flex;
     padding: 1em 2em;
-}
-
-img{
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    padding: 1em 2em;
+    
+    box-shadow: 0px 10px 13px -7px #000000, 4px 12px 27px -3px rgba(255, 255, 255, 0);
 }
 
 .movie-info{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    font-weight: 300;
+    line-height: 1em;
 }
 
 .title{
@@ -59,6 +84,31 @@ img{
     gap: 1em;
     margin: 0;
 }
+
+img{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 1em 2em;
+}
+
+
+/* Typeography */
+
+h2{
+    font-size: 1.5rem;
+}
+
+h1{
+    text-align: center;
+    justify-content: center;
+}
+
+
+.movie-list{
+    color: white;
+}
+
 
 .plot{
     font-size: 1rem;
@@ -85,8 +135,6 @@ hr{
         align-items: center;
     }
 
-    p{
-        text-align: center;
-    }
+  
 
 }

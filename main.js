@@ -16,9 +16,15 @@ form.addEventListener('submit', e =>{
     searchMovie(query)
 })
 
+function Refresh() {
+    window.parent.location = window.parent.location.href;
+}
+
+
 
 searchButton.addEventListener("click", function(){
-    
+    movieTitle.innerHTML = ""
+    query = ""
 })
 
 
@@ -48,13 +54,13 @@ function searchMovie(query){
             
             
             </div>
-            <hr>
+            
             `
             })
-
           }
         })
 }
+
 
 
 
